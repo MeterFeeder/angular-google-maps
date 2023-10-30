@@ -21,16 +21,16 @@
     "gmaps"
   ],
   "peerDependencies": {
-    "@angular/common": "^9.1.0 || ^10.0.0",
-    "@angular/core": "^9.1.0 || ^10.0.0"
+    "@angular/core": "^15.0.0 || ^16.0.0",
+    "@angular/common": "^15.0.0 || ^16.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@types/googlemaps": "^3.39.8",
-    "@types/jest": "^26.0.3",
-    "jest": "^26.1.0",
-    "jest-preset-angular": "^8.2.1"
+    "@types/jest": "^28.0.3",
+    "jest": "^28",
+    "jest-preset-angular": "^12.2.6"
   }
 }

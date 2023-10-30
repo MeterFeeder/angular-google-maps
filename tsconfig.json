@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "ES2022",
     "module": "es2020",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -19,24 +19,21 @@
     ],
     "paths": {
       "@agm/core": [
-        "dist/core/agm-core",
-        "dist/core"
+        "packages/core/src/public-api.ts"
       ],
       "@agm/markerclusterer": [
-        "dist/markerclusterer/agm-markerclusterer",
-        "dist/markerclusterer"
+        "dist/markerclusterer/src/public-api.ts"
       ],
       "@agm/snazzy-info-window": [
-        "dist/snazzy-info-window/agm-snazzy-info-window",
-        "dist/snazzy-info-window"
+        "dist/snazzy-info-window/src/public-api.ts"
       ],
       "@agm/drawing": [
-        "dist/drawing/drawing",
-        "dist/drawing"
+        "dist/drawing/src/public-api.ts"
       ]
     },
     "types": [
-      "googlemaps"
-    ]
+      "googlemaps", "node", "jest"
+    ],
+    "useDefineForClassFields": false
   }
 }

@@ -1,9 +1,10 @@
-import { AgmMarker, GoogleMapsAPIWrapper } from '@agm/core';
+// import { AgmMarker, GoogleMapsAPIWrapper } from '@agm/core';
 import { NgZone } from '@angular/core';
-import { async, inject, TestBed } from '@angular/core/testing';
+import { inject, TestBed, waitForAsync } from '@angular/core/testing';
 import MarkerClusterer from '@google/markerclustererplus';
 import { AgmMarkerCluster } from '../../directives/marker-cluster';
 import { ClusterManager } from './cluster-manager';
+import { AgmMarker, GoogleMapsAPIWrapper } from '@agm/core';
 
 describe('ClusterManager', () => {
   beforeEach(() => {
@@ -68,7 +69,7 @@ describe('ClusterManager', () => {
 
   describe('set marker icon', () => {
     it('should update that marker via setIcon method when the markerUrl changes',
-       async(inject(
+      waitForAsync(inject(
            [ClusterManager, GoogleMapsAPIWrapper],
            (markerManager: ClusterManager, apiWrapper: GoogleMapsAPIWrapper) => {
              const newMarker = new AgmMarker(markerManager);
@@ -103,7 +104,7 @@ describe('ClusterManager', () => {
 
   describe('set marker opacity', () => {
     it('should update that marker via setOpacity method when the markerOpacity changes',
-       async(inject(
+      waitForAsync (inject(
            [ClusterManager, GoogleMapsAPIWrapper],
            (markerManager: ClusterManager, apiWrapper: GoogleMapsAPIWrapper) => {
              const newMarker = new AgmMarker(markerManager);
@@ -138,7 +139,7 @@ describe('ClusterManager', () => {
 
   describe('set visible option', () => {
     it('should update that marker via setVisible method when the visible changes',
-       async(inject(
+      waitForAsync (inject(
            [ClusterManager, GoogleMapsAPIWrapper],
            (markerManager: ClusterManager, apiWrapper: GoogleMapsAPIWrapper) => {
              const newMarker = new AgmMarker(markerManager);
@@ -173,7 +174,7 @@ describe('ClusterManager', () => {
 
   describe('set zIndex option', () => {
     it('should update that marker via setZIndex method when the zIndex changes',
-       async(inject(
+      waitForAsync (inject(
            [ClusterManager, GoogleMapsAPIWrapper],
            (markerManager: ClusterManager, apiWrapper: GoogleMapsAPIWrapper) => {
              const newMarker = new AgmMarker(markerManager);

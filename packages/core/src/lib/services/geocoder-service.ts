@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { bindCallback, ConnectableObservable, Observable, of, ReplaySubject, throwError } from 'rxjs';
-import { map, multicast, switchMap } from 'rxjs/operators';
+import { bindCallback, Connectable, connectable, Observable, of, ReplaySubject, throwError } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 import { MapsAPILoader } from './maps-api-loader/maps-api-loader';
 
 @Injectable({ providedIn: 'root' })
@@ -8,14 +8,11 @@ export class AgmGeocoder {
   protected readonly geocoder$: Observable<google.maps.Geocoder>;
 
   constructor(loader: MapsAPILoader) {
-    const connectableGeocoder$ = new Observable(subscriber => {
+    const connectableGeocoder$: Connectable<google.maps.Geocoder> = connectable(new Observable(subscriber => {
       loader.load().then(() => subscriber.next());
     })
-      .pipe(
-        map(() => this._createGeocoder()),
-        multicast(new ReplaySubject(1)),
-      ) as ConnectableObservable<google.maps.Geocoder>;
-
+    .pipe(map(() => this._createGeocoder())), {connector: () => new ReplaySubject(1)});
+    
     connectableGeocoder$.connect(); // ignore the subscription
     // since we will remain subscribed till application exits
 

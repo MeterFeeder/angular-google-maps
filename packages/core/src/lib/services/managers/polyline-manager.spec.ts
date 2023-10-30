@@ -63,7 +63,7 @@ describe('PolylineManager', () => {
           [PolylineManager, GoogleMapsAPIWrapper],
           (polylineManager: PolylineManager, apiWrapper: GoogleMapsAPIWrapper) => {
             const newPolyline = new AgmPolyline(polylineManager);
-              newPolyline.iconSequences = Object.assign(new QueryList<AgmPolylineIcon>(), {
+              newPolyline.iconSequences = Object.assign({}, new QueryList<AgmPolylineIcon>(), {
                 changes: new Subject<AgmPolylineIcon>(),
                 toArray: () => [{
                     fixedRotation: true,
@@ -142,7 +142,7 @@ describe('PolylineManager', () => {
         const iconChanges = new Subject<AgmPolyline>();
 
         const newPolyline = new AgmPolyline(polylineManager);
-        newPolyline.iconSequences = Object.assign(
+        newPolyline.iconSequences = Object.assign({}, 
           new QueryList<AgmPolylineIcon>(),
           { changes: iconChanges, toArray: () => iconArray}) as QueryList<AgmPolylineIcon>;
 
