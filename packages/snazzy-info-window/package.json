@@ -1,12 +1,12 @@
 {
-  "name": "@agm/snazzy-info-window",
-  "version": "3.0.0-beta.1",
+  "name": "@mfagm/snazzy-info-window",
+  "version": "15.2.9",
   "description": "Angular Google Maps (AGM) package for Snazzy Info Window support",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianM/angular-google-maps.git"
+    "url": "https://github.com/MeterFeeder/angular-google-maps.git"
   },
   "bugs": {
     "url": "https://github.com/SebastianM/angular-google-maps/issues"
@@ -20,7 +20,7 @@
     "snazzy-info-window"
   ],
   "peerDependencies": {
-    "@agm/core": "3.0.0-beta.1",
+    "@mfagm/core": "15.2.9",
     "@angular/core": "^15.0.0 || ^16.0.0",
     "@angular/common": "^15.0.0 || ^16.0.0",
     "snazzy-info-window": "^1.1.0"
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "@types/googlemaps": "^3.39.8",
-    "@agm/core": "3.0.0-beta.1"
+    "@mfagm/core": "15.2.9"
   }
 }

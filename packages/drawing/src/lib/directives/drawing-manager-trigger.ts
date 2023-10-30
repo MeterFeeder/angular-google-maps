@@ -1,4 +1,4 @@
-import { AgmMap } from '@agm/core';
+import { AgmMap } from '@mfagm/core';
 import { AfterViewInit, Directive, Host, Input, OnDestroy } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { AgmDrawingManager } from './drawing-manager';

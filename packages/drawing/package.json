@@ -1,12 +1,12 @@
 {
-  "name": "@agm/drawing",
-  "version": "3.0.0-beta.1",
+  "name": "@mfagm/drawing",
+  "version": "15.2.9",
   "description": "Angular Google Maps (AGM) extension for google maps drawing library",
   "author": "Feliks Khantsis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianM/angular-google-maps.git"
+    "url": "https://github.com/MeterFeeder/angular-google-maps.git"
   },
   "bugs": {
     "url": "https://github.com/SebastianM/angular-google-maps/issues"

@@ -18,16 +18,16 @@
       "dom"
     ],
     "paths": {
-      "@agm/core": [
+      "@mfagm/core": [
         "packages/core/src/public-api.ts"
       ],
-      "@agm/markerclusterer": [
+      "@mfagm/markerclusterer": [
         "dist/markerclusterer/src/public-api.ts"
       ],
-      "@agm/snazzy-info-window": [
+      "@mfagm/snazzy-info-window": [
         "dist/snazzy-info-window/src/public-api.ts"
       ],
-      "@agm/drawing": [
+      "@mfagm/drawing": [
         "dist/drawing/src/public-api.ts"
       ]
     },
