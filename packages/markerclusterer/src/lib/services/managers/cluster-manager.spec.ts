@@ -1,10 +1,10 @@
-// import { AgmMarker, GoogleMapsAPIWrapper } from '@mfagm/core';
+// import { AgmMarker, GoogleMapsAPIWrapper } from '@meterfeeder/agm-core';
 import { NgZone } from '@angular/core';
 import { inject, TestBed, waitForAsync } from '@angular/core/testing';
 import MarkerClusterer from '@google/markerclustererplus';
 import { AgmMarkerCluster } from '../../directives/marker-cluster';
 import { ClusterManager } from './cluster-manager';
-import { AgmMarker, GoogleMapsAPIWrapper } from '@mfagm/core';
+import { AgmMarker, GoogleMapsAPIWrapper } from '@meterfeeder/agm-core';
 
 describe('ClusterManager', () => {
   beforeEach(() => {
