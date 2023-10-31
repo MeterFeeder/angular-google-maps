@@ -4,10 +4,7 @@
   "description": "Angular Google Maps (AGM) package for Snazzy Info Window support",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MeterFeeder/angular-google-maps.git"
-  },
+  "repository": "https://github.com/MeterFeeder/angular-google-maps",
   "bugs": {
     "url": "https://github.com/SebastianM/angular-google-maps/issues"
   },
