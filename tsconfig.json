@@ -19,16 +19,18 @@
     ],
     "paths": {
       "@mfagm/core": [
+        "dist/core/agm-core",
+        "dist/core",
         "packages/core/src/public-api.ts"
       ],
       "@mfagm/markerclusterer": [
-        "dist/markerclusterer/src/public-api.ts"
+        "packages/markerclusterer/src/public-api.ts"
       ],
       "@mfagm/snazzy-info-window": [
-        "dist/snazzy-info-window/src/public-api.ts"
+        "packages/snazzy-info-window/src/public-api.ts"
       ],
       "@mfagm/drawing": [
-        "dist/drawing/src/public-api.ts"
+        "packages/drawing/src/public-api.ts"
       ]
     },
     "types": [
