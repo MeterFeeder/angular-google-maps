@@ -9,7 +9,7 @@ import { PolylineManager } from '../../services/managers/polyline-manager';
 
 describe('PolylineManager', () => {
   beforeAll(() => {
-    Object.assign((window as any).google.maps, {
+    Object.assign(window.google.maps, {
       Point: class Point {
         constructor(public x: number, public y: number) { }
       },

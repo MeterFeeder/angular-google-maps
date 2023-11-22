@@ -1,5 +1,5 @@
 {
-  "name": "@mfagm/drawing",
+  "name": "@meterfeeder/agm-drawing",
   "version": "15.2.9",
   "description": "Angular Google Maps (AGM) extension for google maps drawing library",
   "author": "Feliks Khantsis",

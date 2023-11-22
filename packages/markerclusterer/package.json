@@ -1,5 +1,5 @@
 {
-  "name": "@mfagm/markerclusterer",
+  "name": "@meterfeeder/agm-markerclusterer",
   "version": "15.2.9",
   "description": "Angular Google Maps (AGM) extension for markerclusterer support",
   "author": "Jens Fahnenbruck <jigfox@me.com>",
@@ -17,7 +17,7 @@
     "agm"
   ],
   "peerDependencies": {
-    "@mfagm/core": "15.2.9",
+    "@meterfeeder/agm-core": "15.2.9",
     "@angular/common": "^15.0.0 || ^16.0.0",
     "@angular/core": "^15.0.0 || ^16.0.0",
     "@google/markerclustererplus": "^5.0.4"
@@ -26,7 +26,7 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@mfagm/core": "15.2.9",
+    "@meterfeeder/agm-core": "15.2.9",
     "@google/markerclustererplus": "^5.0.4",
     "@types/googlemaps": "^3.39.8",
     "@types/jest": "^26.0.3"

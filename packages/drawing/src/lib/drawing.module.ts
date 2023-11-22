@@ -1,4 +1,4 @@
-import { AgmCoreModule } from '@mfagm/core';
+import { AgmCoreModule } from '@meterfeeder/agm-core';
 import { NgModule } from '@angular/core';
 import { AgmDrawingManager } from './directives/drawing-manager';
 import { AgmDrawingManagerTrigger } from './directives/drawing-manager-trigger';

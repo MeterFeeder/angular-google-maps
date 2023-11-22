@@ -1,5 +1,5 @@
 {
-  "name": "@mfagm/core",
+  "name": "@meterfeeder/agm-core",
   "version": "15.2.9",
   "description": "Angular components for Google Maps",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
